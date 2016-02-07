@@ -28,7 +28,7 @@ Pod::Spec.new do |s|
     Convenience toolkit, contains stuff for Strings, UIImage and UIColor
                    DESC
 
-  s.homepage     = "https://toolkit.nordicarts.net"
+  s.homepage     = "https://github.com/NordicArts/NAToolKit"
 
 
   # ―――  Spec License  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
