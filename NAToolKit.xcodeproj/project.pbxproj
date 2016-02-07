@@ -7,9 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		35971156BC6D0950294187F0 /* Pods_NAToolKitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E65BBB47AC3BA406A59449C /* Pods_NAToolKitTests.framework */; };
+		F320156A1C678B5A001A1EEA /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = F322D0551C678AE200F35120 /* Color.swift */; };
+		F320156B1C678B5D001A1EEA /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = F322D0571C678AE200F35120 /* String.swift */; };
+		F320156C1C678B60001A1EEA /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = F322D0561C678AE200F35120 /* Image.swift */; };
 		F322D03F1C6788F100F35120 /* NAToolKit.h in Headers */ = {isa = PBXBuildFile; fileRef = F322D03E1C6788F100F35120 /* NAToolKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F322D0461C6788F100F35120 /* NAToolKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F322D03B1C6788F100F35120 /* NAToolKit.framework */; };
 		F322D04B1C6788F100F35120 /* NAToolKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F322D04A1C6788F100F35120 /* NAToolKitTests.swift */; };
+		F322D0581C678AE200F35120 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = F322D0551C678AE200F35120 /* Color.swift */; };
+		F322D0591C678AE200F35120 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = F322D0561C678AE200F35120 /* Image.swift */; };
+		F322D05A1C678AE200F35120 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = F322D0571C678AE200F35120 /* String.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,12 +30,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E65BBB47AC3BA406A59449C /* Pods_NAToolKitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NAToolKitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CD513AB5E5CC348139C307A /* Pods-NAToolKitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NAToolKitTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NAToolKitTests/Pods-NAToolKitTests.release.xcconfig"; sourceTree = "<group>"; };
+		8574B10743CDCD9A0CD28A8A /* Pods-NAToolKitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NAToolKitTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NAToolKitTests/Pods-NAToolKitTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F322D03B1C6788F100F35120 /* NAToolKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NAToolKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F322D03E1C6788F100F35120 /* NAToolKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NAToolKit.h; sourceTree = "<group>"; };
 		F322D0401C6788F100F35120 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F322D0451C6788F100F35120 /* NAToolKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NAToolKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F322D04A1C6788F100F35120 /* NAToolKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NAToolKitTests.swift; sourceTree = "<group>"; };
 		F322D04C1C6788F100F35120 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F322D0551C678AE200F35120 /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		F322D0561C678AE200F35120 /* Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		F322D0571C678AE200F35120 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,18 +57,38 @@
 			buildActionMask = 2147483647;
 			files = (
 				F322D0461C6788F100F35120 /* NAToolKit.framework in Frameworks */,
+				35971156BC6D0950294187F0 /* Pods_NAToolKitTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		61DE2850E563CF47C4D54BE2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0E65BBB47AC3BA406A59449C /* Pods_NAToolKitTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B9F89217425D5248C982EDBD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8574B10743CDCD9A0CD28A8A /* Pods-NAToolKitTests.debug.xcconfig */,
+				4CD513AB5E5CC348139C307A /* Pods-NAToolKitTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		F322D0311C6788F100F35120 = {
 			isa = PBXGroup;
 			children = (
 				F322D03D1C6788F100F35120 /* NAToolKit */,
 				F322D0491C6788F100F35120 /* NAToolKitTests */,
 				F322D03C1C6788F100F35120 /* Products */,
+				B9F89217425D5248C982EDBD /* Pods */,
+				61DE2850E563CF47C4D54BE2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +104,9 @@
 		F322D03D1C6788F100F35120 /* NAToolKit */ = {
 			isa = PBXGroup;
 			children = (
+				F322D0551C678AE200F35120 /* Color.swift */,
+				F322D0561C678AE200F35120 /* Image.swift */,
+				F322D0571C678AE200F35120 /* String.swift */,
 				F322D03E1C6788F100F35120 /* NAToolKit.h */,
 				F322D0401C6788F100F35120 /* Info.plist */,
 			);
@@ -122,9 +158,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F322D0521C6788F100F35120 /* Build configuration list for PBXNativeTarget "NAToolKitTests" */;
 			buildPhases = (
+				8BEB9519FAD1A491CAE83E14 /* Check Pods Manifest.lock */,
 				F322D0411C6788F100F35120 /* Sources */,
 				F322D0421C6788F100F35120 /* Frameworks */,
 				F322D0431C6788F100F35120 /* Resources */,
+				9267EC19DFC30248DE120ADF /* Embed Pods Frameworks */,
+				A5CFC6F1509752D8C6B1D301 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -189,11 +228,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8BEB9519FAD1A491CAE83E14 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9267EC19DFC30248DE120ADF /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NAToolKitTests/Pods-NAToolKitTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A5CFC6F1509752D8C6B1D301 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NAToolKitTests/Pods-NAToolKitTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F322D0361C6788F100F35120 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F322D05A1C678AE200F35120 /* String.swift in Sources */,
+				F322D0581C678AE200F35120 /* Color.swift in Sources */,
+				F322D0591C678AE200F35120 /* Image.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,7 +291,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F320156B1C678B5D001A1EEA /* String.swift in Sources */,
+				F320156C1C678B60001A1EEA /* Image.swift in Sources */,
 				F322D04B1C6788F100F35120 /* NAToolKitTests.swift in Sources */,
+				F320156A1C678B5A001A1EEA /* Color.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,6 +401,7 @@
 		F322D0501C6788F100F35120 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -318,12 +412,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = net.nordicarts.NAToolKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		F322D0511C6788F100F35120 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -339,6 +435,7 @@
 		};
 		F322D0531C6788F100F35120 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8574B10743CDCD9A0CD28A8A /* Pods-NAToolKitTests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = NAToolKitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -349,6 +446,7 @@
 		};
 		F322D0541C6788F100F35120 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4CD513AB5E5CC348139C307A /* Pods-NAToolKitTests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = NAToolKitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -376,6 +474,7 @@
 				F322D0511C6788F100F35120 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F322D0521C6788F100F35120 /* Build configuration list for PBXNativeTarget "NAToolKitTests" */ = {
 			isa = XCConfigurationList;
@@ -384,6 +483,7 @@
 				F322D0541C6788F100F35120 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
