@@ -8,15 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		35971156BC6D0950294187F0 /* Pods_NAToolKitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E65BBB47AC3BA406A59449C /* Pods_NAToolKitTests.framework */; };
-		F320156A1C678B5A001A1EEA /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = F322D0551C678AE200F35120 /* Color.swift */; };
-		F320156B1C678B5D001A1EEA /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = F322D0571C678AE200F35120 /* String.swift */; };
-		F320156C1C678B60001A1EEA /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = F322D0561C678AE200F35120 /* Image.swift */; };
+		F320156E1C6791DC001A1EEA /* NAToolKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = F320156D1C6791DC001A1EEA /* NAToolKit.swift */; };
+		F320156F1C6791E0001A1EEA /* NAToolKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = F320156D1C6791DC001A1EEA /* NAToolKit.swift */; };
 		F322D03F1C6788F100F35120 /* NAToolKit.h in Headers */ = {isa = PBXBuildFile; fileRef = F322D03E1C6788F100F35120 /* NAToolKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F322D0461C6788F100F35120 /* NAToolKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F322D03B1C6788F100F35120 /* NAToolKit.framework */; };
 		F322D04B1C6788F100F35120 /* NAToolKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F322D04A1C6788F100F35120 /* NAToolKitTests.swift */; };
-		F322D0581C678AE200F35120 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = F322D0551C678AE200F35120 /* Color.swift */; };
-		F322D0591C678AE200F35120 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = F322D0561C678AE200F35120 /* Image.swift */; };
-		F322D05A1C678AE200F35120 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = F322D0571C678AE200F35120 /* String.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,15 +29,13 @@
 		0E65BBB47AC3BA406A59449C /* Pods_NAToolKitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NAToolKitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CD513AB5E5CC348139C307A /* Pods-NAToolKitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NAToolKitTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NAToolKitTests/Pods-NAToolKitTests.release.xcconfig"; sourceTree = "<group>"; };
 		8574B10743CDCD9A0CD28A8A /* Pods-NAToolKitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NAToolKitTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NAToolKitTests/Pods-NAToolKitTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F320156D1C6791DC001A1EEA /* NAToolKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NAToolKit.swift; sourceTree = "<group>"; };
 		F322D03B1C6788F100F35120 /* NAToolKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NAToolKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F322D03E1C6788F100F35120 /* NAToolKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NAToolKit.h; sourceTree = "<group>"; };
 		F322D0401C6788F100F35120 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F322D0451C6788F100F35120 /* NAToolKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NAToolKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F322D04A1C6788F100F35120 /* NAToolKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NAToolKitTests.swift; sourceTree = "<group>"; };
 		F322D04C1C6788F100F35120 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F322D0551C678AE200F35120 /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
-		F322D0561C678AE200F35120 /* Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
-		F322D0571C678AE200F35120 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,11 +98,9 @@
 		F322D03D1C6788F100F35120 /* NAToolKit */ = {
 			isa = PBXGroup;
 			children = (
-				F322D0551C678AE200F35120 /* Color.swift */,
-				F322D0561C678AE200F35120 /* Image.swift */,
-				F322D0571C678AE200F35120 /* String.swift */,
 				F322D03E1C6788F100F35120 /* NAToolKit.h */,
 				F322D0401C6788F100F35120 /* Info.plist */,
+				F320156D1C6791DC001A1EEA /* NAToolKit.swift */,
 			);
 			path = NAToolKit;
 			sourceTree = "<group>";
@@ -281,9 +273,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F322D05A1C678AE200F35120 /* String.swift in Sources */,
-				F322D0581C678AE200F35120 /* Color.swift in Sources */,
-				F322D0591C678AE200F35120 /* Image.swift in Sources */,
+				F320156E1C6791DC001A1EEA /* NAToolKit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,10 +281,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F320156B1C678B5D001A1EEA /* String.swift in Sources */,
-				F320156C1C678B60001A1EEA /* Image.swift in Sources */,
+				F320156F1C6791E0001A1EEA /* NAToolKit.swift in Sources */,
 				F322D04B1C6788F100F35120 /* NAToolKitTests.swift in Sources */,
-				F320156A1C678B5A001A1EEA /* Color.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
