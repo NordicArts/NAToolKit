@@ -10,8 +10,8 @@ import Foundation
 import UIKit
 
 // MARK: String
-extension String {
-    var length: Int {
+public extension String {
+    public var length: Int {
         get {
             return self.characters.count
         }
@@ -19,8 +19,8 @@ extension String {
 }
 
 // MARK: UIImage
-extension UIImage {
-    func resizeImage(width: Int, height: Int) -> UIImage {
+public extension UIImage {
+    public func resizeImage(width: Int, height: Int) -> UIImage {
         let hasAlpha:Bool = true
         let scale:CGFloat = 0.0
         let size:CGSize  = CGSize(width: width, height: height)
@@ -34,8 +34,8 @@ extension UIImage {
 }
 
 // MARK: UIColor
-extension UIColor {
-    convenience init(hexString: String) {
+public extension UIColor {
+    public convenience init(hexString: String) {
         let hex = hexString.stringByTrimmingCharactersInSet(NSCharacterSet.alphanumericCharacterSet().invertedSet)
         var int = UInt32()
         NSScanner(string: hex).scanHexInt(&int)
