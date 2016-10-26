@@ -20,25 +20,25 @@ public extension String {
 
 // MARK: UIImage
 public extension UIImage {
-    public func resizeImage(width: Int, height: Int) -> UIImage {
+    public func resizeImage(_ width: Int, height: Int) -> UIImage {
         let hasAlpha:Bool = true
         let scale:CGFloat = 0.0
         let size:CGSize  = CGSize(width: width, height: height)
         
         UIGraphicsBeginImageContextWithOptions(size, !hasAlpha, scale)
-        self.drawInRect(CGRect(origin: CGPointZero, size: size))
+        self.draw(in: CGRect(origin: CGPoint.zero, size: size))
         
         let scaledImage = UIGraphicsGetImageFromCurrentImageContext()
-        return scaledImage
+        return scaledImage!
     }
 }
 
 // MARK: UIColor
 public extension UIColor {
     public convenience init(hexString: String) {
-        let hex = hexString.stringByTrimmingCharactersInSet(NSCharacterSet.alphanumericCharacterSet().invertedSet)
+        let hex = hexString.trimmingCharacters(in: CharacterSet.alphanumerics.inverted)
         var int = UInt32()
-        NSScanner(string: hex).scanHexInt(&int)
+        Scanner(string: hex).scanHexInt32(&int)
         
         let a:UInt32
         let r:UInt32
